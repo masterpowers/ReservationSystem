@@ -7,9 +7,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use App\Http\Controllers\Controller;
 
-use App\RoomType;
-
-class RoomTypeController extends Controller
+class RoomCalendarController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,8 +16,7 @@ class RoomTypeController extends Controller
      */
     public function index()
     {
-        $room_types = RoomType::all();
-        return $room_types;
+        //
     }
 
     /**
@@ -27,12 +24,9 @@ class RoomTypeController extends Controller
      *
      * @return Response
      */
-    public function create(Request $request)
+    public function create()
     {
-        $room_type = new RoomType($request->all());
-        $room_type->save();
- 
-        return $room_type;
+        //
     }
 
     /**
